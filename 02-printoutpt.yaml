@@ -1,5 +1,6 @@
 - name: Printing the output
   hosts: frontend
+  connection: local
   tasks: 
   - name: Print the output
     ansible.builtin.debug:
