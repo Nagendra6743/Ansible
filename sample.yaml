@@ -16,4 +16,4 @@
   - name: Installing the nginx server
     ansible.builtin.package:
       name: nginx
-      state: remove
+      state: removed
