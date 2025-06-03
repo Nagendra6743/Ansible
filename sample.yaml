@@ -1,0 +1,5 @@
+- name: Checking all the modules
+  connection: local
+  tasks:
+  - name: Pinging the hosts
+    ansible.builtin.ping:
