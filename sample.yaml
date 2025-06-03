@@ -4,3 +4,7 @@
   tasks:
   - name: Pinging the hosts
     ansible.builtin.ping:
+
+  - name: printing the course details
+    ansible.builtin.debug:
+      msg: "The course details are "
