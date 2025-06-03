@@ -1,8 +1,6 @@
 - name: Conditions in Ansible
   hosts: local
   connection: local
-  vars:
-    NUMBER: 79
   tasks:
   - name: Given number is less than 100
     ansible.builtin.debug:
