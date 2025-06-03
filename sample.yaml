@@ -11,3 +11,12 @@
       DURATION: 1 HR
     ansible.builtin.debug:
       msg: "The course details are {{ COURSE }} and the duration is {{ DURATION }}"
+
+  - name: Installing the nginx server
+    ansible.builtin.package:
+    state: present
+
+  - name: Starting the nginx server
+    ansible.builtin.service:
+    state: started
+    enabled: yes
