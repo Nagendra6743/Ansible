@@ -1,6 +1,5 @@
 - name: nginx install and run
   hosts: frontend
-  connection: local
   become: yes # sudo access
   tasks:
   - name: install nginx server
@@ -13,8 +12,3 @@
       name: nginx
       state: started
       enabled: yes
-
-  - name: status nginx
-    ansible.builtin.service:
-      name: nginx
-      state: status
