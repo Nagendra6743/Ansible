@@ -1,6 +1,6 @@
 - name: Conditions in Ansible
   hosts: local
-  conncetion: local
+  connection: local
   vars:
     NUMBER: 79
   tasks:
