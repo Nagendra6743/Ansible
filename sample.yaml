@@ -1,4 +1,5 @@
 - name: Checking all the modules
+  hosts: local
   connection: local
   tasks:
   - name: Pinging the hosts
