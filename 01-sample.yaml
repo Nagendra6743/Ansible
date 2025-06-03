@@ -1,6 +1,5 @@
 - name: printing the command
   hosts: frontend
-  connection: local
   tasks:
   - name: ping the server
     ansible.builtin.ping:
