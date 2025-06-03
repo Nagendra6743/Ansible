@@ -6,5 +6,8 @@
     ansible.builtin.ping:
 
   - name: printing the course details
+    vars:
+      COURSE: Ansible
+      DURATION: 1 HR
     ansible.builtin.debug:
-      msg: "The course details are "
+      msg: "The course details are {{ COURSE }} and the duration is {{ DURATION }}"
