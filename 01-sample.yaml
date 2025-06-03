@@ -1,4 +1,4 @@
-- name: prining the command
+- name: printing the command
   hosts: frontend
   tasks:
   - name: ping the server
