@@ -6,6 +6,12 @@
     ansible.builtin.package:
       name: nginx
       state: present
+    register: nginx_output
+    
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ nginx_output }}"
+
   
   - name: start nginx
     ansible.builtin.service:
