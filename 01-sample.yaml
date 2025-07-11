@@ -3,7 +3,7 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
-    register: ping output
+    register: ping_output
   - name: print the message
     ansible.builtin.debug:
-      msg: "{{ ping output }}"
+      msg: "{{ ping_output }}"
