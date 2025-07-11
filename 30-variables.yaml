@@ -7,10 +7,10 @@
   #vars_prompt:
   # - name: COURSE
   #    prompt: Enter the course name
-  vars:
-    COURSE: DevOps
-    DURATION: 2HR
-    Trainer: Balayya
+  #vars:
+  # COURSE: DevOps
+  # DURATION: 2HR
+  # Trainer: Balayya
   tasks:
   - name: Checking play level vars
     ansible.builtin.debug:
