@@ -13,9 +13,9 @@
 
   - name: Checking task level vars
     vars:
-    COURSE: Python
-    DURATION: 2HR
-    Trainer: Chiru
+      COURSE: Python
+      DURATION: 2HR
+      Trainer: Chiru
     ansible.builtin.debug:
       msg: "The course is {{ COURSE }}, Duaration: {{ DURATION }} and the Trainer is {{ Trainer }}"
   
