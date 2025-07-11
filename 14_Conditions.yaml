@@ -1,8 +1,10 @@
 - name: conditions in Ansible
   hosts: local
   connection: local
-  vars:
-    NUMBER: 100
+  vars_prompt:
+  - name: NUMBER
+    prompt: enter the number
+    
   tasks:
   - name: the given number is less than 100
     ansible.builtin.debug:
