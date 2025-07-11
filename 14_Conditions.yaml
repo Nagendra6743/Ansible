@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: "{{ NUMBER }}"
+  - name: NUMBER
     prompt: enter the number
     private: false
     
