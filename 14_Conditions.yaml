@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: NUMBER
+  - name: "{{ NUMBER }}"
     prompt: enter the number
     private: false
     
@@ -10,9 +10,9 @@
   - name: the given number is less than 100
     ansible.builtin.debug:
       msg: "the given number {{ NUMBER }} is less than 100"
-    when: 100 <= {{ NUMBER }}
+    when: NUMBER <= 100
 
   - name: the given number is greater than 100
     ansible.builtin.debug:
       msg: "the given number {{ NUMBER }} is greater than 100"
-    when: 100 >= {{ NUMBER }}
+    when: NUMBER >= 100
