@@ -4,9 +4,10 @@
   vars_prompt:
   - name: NUMBER
     prompt: enter the number
+    private: false
     
   tasks:
   - name: the given number is less than 100
     ansible.builtin.debug:
       msg: "the given number {{ NUMBER }} is less than 100"
-    when: {{ NUMBER }} <= 100
+    when: "{{ NUMBER }}" <= 100
