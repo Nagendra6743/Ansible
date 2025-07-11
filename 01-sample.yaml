@@ -3,7 +3,6 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
-  tasks:
   - name: print the message
     ansible.builtin.debug:
       msg: "ping the server"
