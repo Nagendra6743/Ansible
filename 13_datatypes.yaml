@@ -14,5 +14,5 @@
   tasks:
   - name: checking the datatypes
     ansible.builtin.debug:
-      msg: The Course is {{ COURSE }}, Duration is {{ DURATION }} is live:? {{ IS_LIVE }} and trainer os {{ TRAINER }}
-          about scripting {{ SCRIPTING }}
+      msg: " The Course is {{ COURSE }}, Duration is {{ DURATION }} is live:? {{ IS_LIVE }} and trainer os {{ TRAINER }}
+          about scripting {{ SCRIPTING }}"
