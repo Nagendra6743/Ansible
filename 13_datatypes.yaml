@@ -1,18 +1,18 @@
-- name: ansible datatypes
+- name: Data Types and its work
   hosts: local
   connection: local
   vars:
-    DURATION: 120 # This is number
-    COURSE: "DevSecOps with AWS" # String
-    IS_LIVE: true # boolean
-    TOOLS: # List []
-    - Linux
-    - shell
-    - Ansible
-    CONCETPS: # map or dictionary or object. referred like {}
-      CI: Jenkins
-      SCRIPTING: "Shell, Ansible, Terraform, Python"
+    DURATION: 120
+    TRAINER: Sivakumar
+    IS_LIVE: true
+    COURSE:
+      - Linux
+      - shell
+      - Ansible
+    SCRIPTING:
+      CI: Github
   tasks:
-  - name: print course information
+  - name: checking the datatypes
     ansible.builtin.debug:
-      msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
+      msg: The Course is {{ COURSE }}, Duration is {{ DURATION }} is live:? {{ IS_LIVE }} and trainer os {{ TRAINER }}
+          about scripting {{ SCRIPTING }}
