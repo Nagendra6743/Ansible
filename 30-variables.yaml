@@ -4,6 +4,9 @@
   become: yes
   vars_files:
     - COURSE.yaml
+  vars_prompt:
+    - name: COURSE
+      prompt: Enter the course name
   vars:
     COURSE: DevOps
     DURATION: 2HR
